@@ -49,7 +49,6 @@ class Application(tk.Frame):
             sheet = wb.active
             for row in sheet.iter_rows(values_only=True):
                 if str(row[0]) == input_id and str(row[2]) == input_pass:
-                    print('一致')
                     wb_attendance = load_workbook('C:\\python\\Excel\\勤怠管理.xlsx')
                     sheet_attendance = wb_attendance.active
                     last_row = sheet_attendance.max_row
