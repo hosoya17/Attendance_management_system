@@ -25,7 +25,7 @@ class Application(tk.Frame):
         self.id_entry = tk.Entry(self)
         self.id_entry.place(x=65, y=140)
 
-        self.pass_entry = tk.Entry(self)
+        self.pass_entry = tk.Entry(self, show='●')
         self.pass_entry.place(x=280, y=140)
 
         attendance_btn = tk.Button(self, text='出勤', width=10)
